@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <title>Custos do servidor</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+<header><div><span class="eyebrow">STATUS E CUSTOS</span><h1 id="serverName">Meu servidor</h1><p>Transparência sobre os recursos usados para manter este serviço online.</p></div><span class="live"><i></i> ATUALIZANDO</span></header>
+<main>
+  <section class="hero">
+    <div><span class="eyebrow">CUSTO OPERACIONAL ESTIMADO</span><div class="big" id="total">R$ 0,00</div><p>Acumulado desde a última inicialização do servidor</p></div>
+    <div class="updated">Última atualização<br><strong id="updated">—</strong><br><small>Atualização automática a cada 15 segundos</small></div>
+  </section>
+  <section class="grid">
+    <article class="panel"><span class="eyebrow">ENERGIA ELÉTRICA</span><div class="value" id="energy">R$ 0,00</div><p><b id="kwh">0 kWh</b> estimados consumidos</p></article>
+    <article class="panel"><span class="eyebrow">TRÁFEGO DE INTERNET</span><div class="value" id="trafficCost">R$ 0,00</div><p><b id="traffic">0 GB</b> recebidos + enviados</p></article>
+    <article class="panel"><span class="eyebrow">DESGASTE / DEPRECIAÇÃO</span><div class="value" id="depreciation">R$ 0,00</div><p>Desvalorização estimada do hardware</p></article>
+  </section>
+  <section class="panel">
+    <div class="section-head"><div><span class="eyebrow">RECURSOS EM TEMPO REAL</span><h2>Uso do servidor</h2></div><span id="uptime">Tempo ligado: —</span></div>
+    <div class="meters">
+      <div><div class="meter-label"><span>Processador</span><b id="cpu">0%</b></div><div class="track"><i id="cpuBar"></i></div></div>
+      <div><div class="meter-label"><span>Memória RAM</span><b id="ram">0%</b></div><div class="track"><i id="ramBar"></i></div><small id="ramDetail"></small></div>
+      <div><div class="meter-label"><span>Disco raiz</span><b id="disk">0%</b></div><div class="track"><i id="diskBar"></i></div><small id="diskDetail"></small></div>
+    </div>
+  </section>
+  <section class="donate">
+    <div class="donate-copy"><span class="eyebrow">APOIE A INFRAESTRUTURA</span><h2>Ajude a manter o servidor online.</h2><p>As doações ajudam a custear energia, internet, manutenção e a substituição dos equipamentos. Qualquer valor é bem-vindo.</p>
+      <div class="amounts" id="amounts"></div>
+      <label for="amount">Outro valor (R$)</label><input id="amount" type="number" min="1" step="0.01" value="10.00">
+      <button id="copyPix">Copiar código Pix</button><p class="pix-key">Chave Pix: <strong id="pixKey">danyeas@hotmail.com</strong></p><span id="copyStatus" aria-live="polite"></span>
+    </div>
+    <div class="qr-wrap"><div id="qrcode"></div><b>FAÇA UM PIX AQUI</b><small>Abra o aplicativo do seu banco e escaneie o QR Code.</small></div>
+  </section>
+  <footer>Os valores são estimativas calculadas a partir das configurações informadas pelo administrador. O consumo elétrico não é medido por wattímetro; o tráfego é acumulado pelo sistema desde a instalação; a depreciação é linear.</footer>
+</main>
+<script src="/static/app.js"></script>
+</body></html>

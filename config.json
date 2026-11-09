@@ -1,0 +1,18 @@
+{
+  "server_name": "Meu servidor",
+  "electricity_brl_kwh": 0.95,
+  "average_power_watts": 75,
+  "internet_monthly_brl": 120.0,
+  "internet_allowance_gb": 1000,
+  "hardware_value_brl": 3500.0,
+  "hardware_lifetime_months": 48,
+  "pix_key": "danyeas@hotmail.com",
+  "pix_receiver": "DOACAO SERVIDOR",
+  "pix_city": "BRASILIA",
+  "donation_suggestions": [
+    5,
+    10,
+    20,
+    50
+  ]
+}

@@ -1,0 +1,4 @@
+# Adicione ao seu /etc/caddy/Caddyfile:
+doacoes.seudominio.com {
+    reverse_proxy 127.0.0.1:8787
+}
