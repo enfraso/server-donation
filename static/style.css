@@ -6,3 +6,16 @@ header,main{max-width:1050px;margin:auto;padding:28px 22px}header{display:flex;j
 .section-head{display:flex;justify-content:space-between;align-items:center;gap:12px}.section-head>span{font-size:12px;color:var(--muted)}.meters{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:22px}.meter-label{display:flex;justify-content:space-between;font-size:13px;margin-bottom:8px}.track{height:9px;border-radius:20px;background:#26364b;overflow:hidden}.track i{display:block;height:100%;width:0;background:var(--accent);border-radius:20px;transition:width .4s}.meters small{display:block;color:var(--muted);font-size:11px;margin-top:7px}
 .donate{margin-top:16px;background:#122b2b;border:1px solid #24504a;border-radius:17px;padding:26px;display:grid;grid-template-columns:1fr 220px;gap:25px;align-items:center}.donate h2{font-size:25px;margin:8px 0}.donate-copy>p{max-width:570px}.amounts{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0 13px}.amounts button{background:#1b4140;border:1px solid #3c7469;color:#dffcf2;padding:8px 15px;border-radius:9px;cursor:pointer}.amounts button.active{background:var(--accent);color:#09251c}.donate label{display:block;color:var(--muted);font-size:12px;margin-bottom:5px}input{width:150px;background:#0b1e20;border:1px solid #37615a;border-radius:8px;padding:10px;color:white;font:inherit}#copyPix{display:block;margin-top:12px;padding:11px 16px;background:var(--accent);color:#06251b;border:0;border-radius:9px;font-weight:800;cursor:pointer}.pix-key{font-size:12px;margin-top:15px}.pix-key strong{color:#e7fff6}#copyStatus{font-size:12px;color:var(--accent)}.qr-wrap{background:#fff;color:#10201c;border-radius:13px;padding:15px;text-align:center;display:flex;align-items:center;flex-direction:column;gap:9px}.qr-wrap small{font-size:10px;color:#52615d}#qrcode{min-height:180px;display:flex;align-items:center;justify-content:center}#qrcode img{max-width:180px}footer{font-size:11px;color:#71839a;padding:20px 3px 40px}
 @media(max-width:700px){header{padding-top:25px}.hero{align-items:flex-start;flex-direction:column}.updated{text-align:left}.grid{grid-template-columns:1fr}.meters{grid-template-columns:1fr;gap:18px}.donate{grid-template-columns:1fr}.qr-wrap{width:220px;margin:auto}.big{font-size:36px}}
+.mascot {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.mascot img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    display: block;
+}
